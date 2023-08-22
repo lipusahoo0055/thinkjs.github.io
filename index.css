@@ -1,0 +1,178 @@
+body {
+    font-family: "serif";
+    color: midnightblue;
+}
+
+.brandLogo {
+    max-width: 120px;
+}
+
+ul.topnav {
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-weight: 600;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+ul.topnav li {
+    float: left;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.topnav-mobile {
+    display: none;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+    display: flex;
+    padding-left: 20px;
+
+    .arrow {
+        width: 30px;
+        height: 30px;
+        margin-top: 18px;
+        margin-right: 5px;
+    }
+
+    .left-div {
+        margin-right: 30px;
+    }
+
+    .right-div {
+        margin-left: 30px;
+    }
+
+    & h3 {
+        color: red;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+.section1Description {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+
+    .jar-img {
+        width: 100%;
+    }
+
+    & h3 {
+        color: red;
+    }
+}
+
+hr {
+    height: 8px;
+    background-color: rgb(134, 37, 37);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bottomnav {
+    font-weight: 600;
+
+    & li {
+        margin: 10px;
+        cursor: pointer;
+        list-style: none;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .topnav-mobile {
+        display: block;
+        float: right;
+        margin: 0 auto;
+        list-style: none;
+    }
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .section3,
+    .section4 {
+        display: block;
+        padding-left: 0px;
+
+        .left-div {
+            margin-right: 0px;
+        }
+
+        .right-div {
+            margin-left: 0px;
+        }
+    }
+
+    .jar-mobile-image {
+        width: 100%;
+    }
+
+    .bottomnav {
+        padding: 0;
+    }
+}
